@@ -13,6 +13,8 @@
 
 * {
   box-sizing: border-box;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 html,
@@ -86,7 +88,7 @@ body {
 }
 
 .info-table th {
-  background: #fafafa;
+  background: #e5e7eb;
 }
 
 .info-table .supplier-side {
@@ -117,7 +119,7 @@ body {
 
 .items-table th {
   height: 36px;
-  background: #fafafa;
+  background: #e5e7eb;
 }
 
 .items-table th:nth-child(1) {
@@ -166,10 +168,23 @@ body {
     overflow: visible;
   }
 
+  body * {
+    visibility: hidden;
+  }
+
+  .statement-sheet,
+  .statement-sheet * {
+    visibility: visible;
+  }
+
   .statement-sheet {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 210mm;
     min-height: 297mm;
     padding: 10mm;
+    margin: 0;
     box-shadow: none;
   }
 }

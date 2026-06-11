@@ -37,7 +37,7 @@ function App() {
 
     return (
         <main className="flex h-screen w-full flex-col overflow-hidden bg-zinc-200 text-neutral-950 print:h-auto print:overflow-visible">
-            <div className="shrink-0 p-4 flex w-full justify-end print:hidden shadow-lg">
+            <div className="shrink-0 bg-zinc-300 p-4 flex w-full justify-end print:hidden shadow-lg">
                 <button
                     type="button"
                     className="rounded-md bg-neutral-950 px-4 py-2 text-sm font-medium text-white"
