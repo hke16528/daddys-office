@@ -15,9 +15,16 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: inherit;
+  overflow: hidden;
 }
 
 #root {
@@ -148,8 +155,15 @@ body {
 }
 
 @media print {
+  html,
+  body,
+  #root {
+    height: auto;
+  }
+
   body {
     background: #fff;
+    overflow: visible;
   }
 
   .statement-sheet {
